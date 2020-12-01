@@ -16,7 +16,9 @@ The following example exports a chart as an image to the XLS document. In this e
 
 * Add two [SimpleButtons](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton) to the form. Set the first button [Text](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton.Text) property to _Export to File_ and the second one - _Export to Stream_. 
 
-* The Chart Control uses the [DevExpress Printing Library](https://docs.devexpress.com/WindowsForms/2079/controls-and-libraries/printing-exporting) to export a chart. To use this library, add references to the following assemblies to the project: _DevExpress.XtraPrinting.19.2, _DevExpress.Printing.v19.2.Core_.
+* The Chart Control uses the [DevExpress Printing Library](https://docs.devexpress.com/WindowsForms/2079/controls-and-libraries/printing-exporting) to export a chart. To use this library, add references to the following assemblies to the project: 
+  * _DevExpress.XtraPrinting.19.2,
+  * _DevExpress.Printing.v19.2.Core_.
 
 * Handle the first button's [Click](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=net-5.0) event and use the [ChartControl.IsPrintingAvailable](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.IsPrintingAvailable) property to check whether the chart can be exported. Call the [ChartControl.ExportToXls(System.String)](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.ExportToXls(System.String)) method to export the chart to a file. Pass the path to this file as a parameter to this method.
 
