@@ -9,9 +9,9 @@ The following example exports a chart as an image to the XLS document. In this e
 
 * [Add](https://docs.devexpress.com/WindowsForms/2957/controls-and-libraries/chart-control/examples/general/how-to-add-a-chart-to-a-windows-forms-application) a [Chart Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl) object to the form. Make sure that this Chart Control _Name_ is _chartControl1_ in the Visual Studio _Properties_ window. 
 
-* Create a [Series](xref:DevExpress.XtraCharts.Series) object and pass [ViewType.Bar](xref:DevExpress.XtraCharts.ViewType.Bar) as a constructor parameter  in the _Form1_Load_ event handler. Use the [ChartControl.Series.Add](xref:DevExpress.XtraCharts.SeriesCollection.Add(DevExpress.XtraCharts.Series)) method to add this series to the chart.
+* Create a [Series](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.Series) object and pass [ViewType.Bar](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.ViewType) as a constructor parameter  in the _Form1_Load_ event handler. Use the [ChartControl.Series.Add](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesCollection.Add(DevExpress.XtraCharts.Series)) method to add this series to the chart.
 
-* Call the _GetSales_ method and set its result to the [ChartControl.DataSource](xref:DevExpress.XtraCharts.ChartControl.DataSource) property. Specify the [Series.ArgumentDataMember](xref:DevExpress.XtraCharts.SeriesBase.ArgumentDataMember) and [Series.ValueDataMembers](xref:DevExpress.XtraCharts.SeriesBase.ValueDataMembers) properties to populate the chart with data.
+* Call the _GetSales_ method and set its result to the [ChartControl.DataSource](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.DataSource) property. Specify the [Series.ArgumentDataMember](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesBase.ArgumentDataMember) and [Series.ValueDataMembers](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesBase.ValueDataMembers) properties to populate the chart with data.
 
 * Add two [SimpleButtons](xref:DevExpress.XtraEditors.SimpleButton) to the form. Set the first button [Text](xref:DevExpress.XtraEditors.SimpleButton.Text) property to _Export to File_ and the second one - _Export to Stream_. 
 
