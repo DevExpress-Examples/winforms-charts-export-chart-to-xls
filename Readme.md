@@ -5,16 +5,20 @@
 <!-- default file list end -->
 # How to: Export a Chart to XLS
 
-The following example exports a chart as an image to an XLS document. In this example, the form contains the _Export to File_ and _Export to Stream_ buttons that allow you to save the XLS document with the chart image to a file or a stream. Follow the steps below to implement this scenario:
+The following example exports a chart as an image to an XLS document. In this example, the form contains the _Export to File_ and _Export to Stream_ buttons that allow you to save the XLS document with the chart image to a file or a stream.
 
-* Add a [Chart Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl) object to the form. Make sure that this Chart Control _Name_ is _chartControl1_ in the Visual Studio _Properties_ window. For more information see: [How to: Add a Chart to a Windows Forms Application](https://docs.devexpress.com/WindowsForms/2957/controls-and-libraries/chart-control/examples/general/how-to-add-a-chart-to-a-windows-forms-application).
+![](images/export-chart-to-xls.png)
+
+Follow the steps below to implement this scenario:
+
+* Add a [Chart Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl) object to the form. Make sure that the Chart Control _Name_ is _chartControl1_ in the Visual Studio _Properties_ window. For more information, see the following topic: [How to: Add a Chart to a Windows Forms Application](https://docs.devexpress.com/WindowsForms/2957/controls-and-libraries/chart-control/examples/general/how-to-add-a-chart-to-a-windows-forms-application).
 
 * Create a [Series](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.Series) object in the _Form1_Load_ event handler. Use the [ChartControl.Series.Add](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesCollection.Add(DevExpress.XtraCharts.Series)) method to add this series to the chart.
 
 * Specify the [ChartControl.DataSource](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.DataSource), [Series.ArgumentDataMember](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesBase.ArgumentDataMember), and [Series.ValueDataMembers](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesBase.ValueDataMembers) properties to populate the chart with data. In this example, the _GetSales_ method returns the chart data source.
 
 
-* Add two [SimpleButtons](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton) to the form. Set the first button [Text](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton.Text) property to _Export to File_ and the second one - _Export to Stream_. 
+* Add two [SimpleButtons](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton) to the form. Set the first button's [Text](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SimpleButton.Text) property to _Export to File_ and the second button's property to _Export to Stream_. 
 
 * The Chart Control uses the [DevExpress Printing Library](https://docs.devexpress.com/WindowsForms/2079/controls-and-libraries/printing-exporting) to export a chart. To use this library, add references to the following assemblies to the project: 
   * _DevExpress.XtraPrinting.19.2_,
