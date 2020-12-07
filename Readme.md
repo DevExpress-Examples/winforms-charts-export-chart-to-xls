@@ -7,7 +7,7 @@
 
 The following example exports a chart as an image to an XLS document. In this example, the form contains the _Export to File_ and _Export to Stream_ buttons that allow you to save the XLS document with the chart image to a file or a stream.
 
-![](images/export-chart-to-xls.png)
+![](images/export-chart-to-xls1.png)
 
 Follow the steps below to implement this scenario:
 
